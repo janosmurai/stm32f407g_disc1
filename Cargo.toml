@@ -1,0 +1,11 @@
+[package]
+name = "stm32f407g_disc1"
+version = "0.1.0"
+authors = ["janosmurai <murai.janos@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.stm32f4xx-hal]
+version = "0.3.0"
+features = ["stm32f407"]
