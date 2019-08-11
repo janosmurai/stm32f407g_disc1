@@ -5,7 +5,17 @@ authors = ["janosmurai <murai.janos@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+cortex-m = "0.5.8"
+cortex-m-semihosting = "0.3.2"
 
-[dependencies.stm32f4xx-hal]
-version = "0.3.0"
+[dependencies.stm32f4] #Direct register access
+version = "0.7.1"
+features = ["stm32f407", "rt"]
+
+[dependencies.stm32f4xx-hal] #HAL functions
+version = "0.5.0"
 features = ["stm32f407"]
+
+[dependencies.lazy_static]
+features = ["spin_no_std"]
+version = "1.3.0"
